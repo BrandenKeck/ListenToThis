@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<HEAD>
+	<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+	<TITLE>Listen To This</TITLE>
+	<link href="res/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="res/css/jquery-ui.min.css" rel="stylesheet" type="text/css">
+	<link href="res/css/spotStyles.css" rel="stylesheet" type="text/css">
+	<link rel="icon" href="res/img/bmkicon.png">
+	<script src="res/js/jquery.js"></script>
+	<script src="res/js/jquery-ui.min.js"></script>
+	<script src="res/js/main.js"></script>
+	<script src="res/js/bootstrap.min.js"></script>
+</HEAD>
+<BODY>
+<div id="notes"></div><div id="notes2"></div><div id="notes3"></div>
+<div id="header">
+	<a href="https://www.spotify.com/" target="_blank">
+		<i class="fa fa-spotify fa-5x noHover"></i>
+	</a>
+	&emsp; &emsp;
+	<p class="titleP">Listen To This</p>
+</div>
+<DIV class="container">
+	<div class="row" id="content">
+		<p class="subheadP">Search Here:</p>
+		<p class="infoP">this is temporary text for where actual info will go:</p>
+	</div>
+	<div class="row" id="content">
+		<div class="col-xs-0 col-md-2"></div>
+		<div class="col-xs-12 col-md-8">
+			<div id="searchTypeDiv">
+				<label><p class="infoP inlineP whiteP">Search Type:</p></label>
+				&emsp;
+				<input id="searchType" type="radio" name="searchType" value="track" selected>
+				<label for="searchType"><span><span></span></span><p class="infoP inlineP whiteP">Track</p></label>
+				&nbsp;
+				<input id="searchType" type="radio" name="searchType" value="artist">
+				<label for="searchType"><span><span></span></span><p class="infoP inlineP whiteP">Artist</p></label>
+				&nbsp;
+				<input id="searchType" type="radio" name="searchType" value="album">
+				<label for="searchType"><span><span></span></span><p class="infoP inlineP whiteP">Album</p></label>
+			</div>
+			<input id="searchBox" type="text" name="spotSearch">
+			<br /><br />
+			<button id="searchButton" onclick="searchMe()">
+				<i class="fa fa-search fa-2x noHover"></i>
+				&nbsp; &nbsp;
+				<b><p class="midP inlineP whiteP">Find Music</p></b>
+			</button>
+			<br /><br />
+			<div id="app"></div>
+		</div>
+		<div class="col-xs-0 col-md-2"></div>
+	</div>
+</DIV>
+</BODY>
+</HTML>
